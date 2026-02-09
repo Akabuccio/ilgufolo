@@ -74,13 +74,13 @@ export function Home() {
                 <span class="apt-capacity">4 Ospiti</span>
               </div>
               <h3>Gufolo Family</h3>
-              <p>Spazio, luce e una cucina da chef. Il rifugio ideale per chi vuole sentirsi a casa.</p>
-              
+              <p>Spazio, luce, cucina. Il rifugio ideale per chi vuole sentirsi a casa.</p>
+               
               <ul class="amenities-pills">
                 <li>Cucina Abitabile</li>
                 <li>WiFi Fibra</li>
                 <li>Lavatrice</li>
-                <li>Pet Friendly</li>
+                <li>A/C</li>
               </ul>
               
               <a href="/appartamenti/" class="btn-explore" data-link>
@@ -112,14 +112,15 @@ export function Home() {
             <div class="card-content-fluid">
               <div class="card-meta">
                 <span class="apt-type">Suite Romantica</span>
-                <span class="apt-capacity">2 Ospiti</span>
+                <span class="apt-capacity">3 Ospiti</span>
               </div>
               <h3>Gufolo Suite</h3>
               <p>Silenzio assoluto e design raffinato. Perfetta per coppie e smart workers.</p>
-              
+               
               <ul class="amenities-pills">
-                <li>Corte Interna</li>
-                <li>Scrivania Smart</li>
+                <li>Affaccio su Corte</li>
+                <li>Cucina Completa</li>
+                <li>Lavatrice</li>
                 <li>WiFi Fibra</li>
                 <li>A/C</li>
               </ul>

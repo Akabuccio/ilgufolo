@@ -112,10 +112,11 @@ export function Apartments() {
             <div class="amenity-item">
               <div class="amenity-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 3.236-4.5 5.5-.387 2.264.168 4.5 2.5 6.5 1.586 1.362 3.5 2.5 5.5 4.5s4.5 2.5 6.5 1.5c2.5-1.5 4.5-3.5 5-6.5.5-3-1.5-6-4.5-6.5-2.5-.5-4 1.5-4 3"/>
+                  <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                  <circle cx="12" cy="12" r="4"/>
                 </svg>
               </div>
-              <span>Pet Friendly</span>
+              <span>Aria Condizionata</span>
             </div>
           </div>
           
@@ -124,7 +125,6 @@ export function Apartments() {
             <a href="/richiesta-soggiorno/?apt=gufolo-family" class="btn btn-primary-glow" data-link>
               Richiedi Disponibilità
             </a>
-            <span class="apt-price-hint">A partire da €80/notte</span>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@ export function Apartments() {
           <p class="apt-tagline">Per coppie, single e smart workers.</p>
           
           <p class="apt-description">
-            Un nido silenzioso affacciato su una corte interna privata. 
+            Un nido silenzioso affacciato su una corte interna. 
             Qui il caos della città rimane fuori, permettendoti di lavorare o rilassarti in totale pace.
             Design moderno e comfort da boutique hotel.
           </p>
@@ -180,10 +180,13 @@ export function Apartments() {
             <div class="amenity-item">
               <div class="amenity-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                 </svg>
               </div>
-              <span>2 Posti Letto</span>
+              <span>3 Posti Letto</span>
             </div>
             
             <div class="amenity-item">
@@ -211,12 +214,11 @@ export function Apartments() {
             <div class="amenity-item">
               <div class="amenity-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="2" y="3" width="20" height="14" rx="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
+                  <rect x="1" y="6" width="22" height="12" rx="2"/>
+                  <path d="M6 12v.01"/>
                 </svg>
               </div>
-              <span>Scrivania Smart</span>
+              <span>Lavatrice</span>
             </div>
             
             <div class="amenity-item">
@@ -236,7 +238,7 @@ export function Apartments() {
                   <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/>
                 </svg>
               </div>
-              <span>Corte Privata</span>
+              <span>Affaccio su Corte</span>
             </div>
           </div>
           
@@ -245,7 +247,6 @@ export function Apartments() {
             <a href="/richiesta-soggiorno/?apt=gufolo-suite" class="btn btn-primary-glow" data-link>
               Richiedi Disponibilità
             </a>
-            <span class="apt-price-hint">A partire da €65/notte</span>
           </div>
         </div>
       </div>
