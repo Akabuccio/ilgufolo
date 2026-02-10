@@ -1153,6 +1153,7 @@ img {
     .longstay-card {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: var(--space-md);
     }
 
     .longstay-content {
@@ -1161,7 +1162,16 @@ img {
 
     .longstay-visual {
         order: 1;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .floating-badge {
+        width: 120px;
+        height: 120px;
+    }
+
+    .floating-badge .discount {
+        font-size: 2rem;
     }
 }
 
@@ -1199,6 +1209,18 @@ img {
 
     .hero-content-fluid {
         padding: 0 var(--space-sm);
+    }
+
+    .hero-cta-group {
+        margin-bottom: 2rem;
+    }
+
+    .scroll-indicator {
+        bottom: 1.5rem;
+    }
+
+    .scroll-line {
+        height: 40px;
     }
 
     .parallax-bg {
