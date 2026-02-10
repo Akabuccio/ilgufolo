@@ -7,6 +7,9 @@ import { Experiences } from './pages/Experiences.js'
 import { Contacts } from './pages/Contacts.js'
 import { initGalleryInteractions, cleanupGallery } from './utils/gallery.js'
 import { updatePageSEO } from './seo-config.js'
+import { PrivacyPolicy } from './pages/PrivacyPolicy.js'
+import { CookiePolicy } from './pages/CookiePolicy.js'
+import { CookieBanner } from './components/CookieBanner.js'
 
 function App() {
   const app = document.querySelector('#app')
@@ -19,6 +22,8 @@ function App() {
     '/appartamenti': Apartments,
     '/esperienze-ferrara': Experiences,
     '/contatti': Contacts,
+    '/privacy-policy': PrivacyPolicy,
+    '/cookie-policy': CookiePolicy,
     '/richiesta-soggiorno': () => `
         <section class="container" style="padding: 6rem 0; text-align: center;">
           <h1>Contattaci</h1>
@@ -41,6 +46,8 @@ function App() {
       if (normalizedPath.startsWith('/appartamenti')) view = Apartments
       else if (normalizedPath.startsWith('/esperienze')) view = Experiences
       else if (normalizedPath.startsWith('/contatti')) view = Contacts
+      else if (normalizedPath.startsWith('/privacy')) view = PrivacyPolicy
+      else if (normalizedPath.startsWith('/cookie')) view = CookiePolicy
       else if (normalizedPath.startsWith('/richiesta')) view = routes['/richiesta-soggiorno']
       else view = Home
     }
@@ -57,6 +64,7 @@ function App() {
         ${view ? view() : Home()}
       </main>
       ${Footer()}
+      ${CookieBanner()}
     `
 
     // Re-attach mobile menu listeners after render

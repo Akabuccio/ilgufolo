@@ -16,6 +16,8 @@ export function Footer() {
             <li><a href="/" data-link>Home</a></li>
             <li><a href="/appartamenti/" data-link>Appartamenti</a></li>
             <li><a href="/esperienze-ferrara/" data-link>Esperienze</a></li>
+            <li style="margin-top: 1rem; opacity: 0.7; font-size: 0.9em;"><a href="/privacy-policy" data-link>Privacy Policy</a></li>
+            <li style="opacity: 0.7; font-size: 0.9em;"><a href="/cookie-policy" data-link>Cookie Policy</a></li>
           </ul>
         </div>
         
@@ -46,9 +48,9 @@ export function Footer() {
                 <p>&copy; ${year} Il Gufolo. Tutti i diritti riservati.</p>
             </div>
             <div class="footer-credits">
-                 <a href="#">Privacy Policy</a>
+                 <a href="/privacy-policy" data-link>Privacy Policy</a>
                  <span class="separator">•</span>
-                 <a href="#">Cookie Policy</a>
+                 <a href="/cookie-policy" data-link>Cookie Policy</a>
             </div>
         </div>
       </div>
