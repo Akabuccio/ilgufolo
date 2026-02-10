@@ -127,29 +127,9 @@ function App() {
 
   function initMobileMenu() {
     const menuToggle = document.querySelector('.mobile-menu-toggle')
-    const mainNav = document.querySelector('.main-nav')
-
-    if (menuToggle && mainNav) {
+    if (menuToggle) {
       menuToggle.addEventListener('click', () => {
-        const isVisible = mainNav.style.display === 'block'
-        mainNav.style.display = isVisible ? 'none' : 'block'
-
-        if (!isVisible) {
-          // Styling for mobile menu (inline for now)
-          Object.assign(mainNav.style, {
-            position: 'absolute',
-            top: '100%',
-            left: '0',
-            right: '0',
-            backgroundColor: 'var(--color-background)',
-            padding: '1rem',
-            boxShadow: 'var(--shadow-md)',
-            display: 'flex',
-            flexDirection: 'column',
-            textAlign: 'center'
-          })
-          mainNav.querySelector('ul').style.flexDirection = 'column';
-        }
+        document.body.classList.toggle('menu-active')
       })
     }
   }
