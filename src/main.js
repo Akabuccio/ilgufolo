@@ -14,11 +14,6 @@ function App() {
   if (!app) return
 
   // Router Logic
-  // Normalize path: remove trailing slash for consistent matching
-  // Exception: root path '/' should remain '/'
-  const normalizedPath = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path
-
-  // Router Logic
   const routes = {
     '/': Home,
     '/appartamenti': Apartments,
@@ -33,24 +28,30 @@ function App() {
       `
   }
 
-  let view = routes[normalizedPath]
+  function router() {
+    const path = window.location.pathname
+    // Normalize path: remove trailing slash for consistent matching
+    // Exception: root path '/' should remain '/'
+    const normalizedPath = path.length > 1 && path.endsWith('/') ? path.slice(0, -1) : path
 
-  // Simple fallback for development / loose matching
-  if (!view) {
-    if (normalizedPath.startsWith('/appartamenti')) view = Apartments
-    else if (normalizedPath.startsWith('/esperienze')) view = Experiences
-    else if (normalizedPath.startsWith('/contatti')) view = Contacts
-    else if (normalizedPath.startsWith('/richiesta')) view = routes['/richiesta-soggiorno']
-    else view = Home
-  }
+    let view = routes[normalizedPath]
 
-  // Set route-specific class on body for styling
-  document.body.className = ''
-  if (path === '/') document.body.classList.add('page-home')
-  else if (path.includes('appartamenti')) document.body.classList.add('page-apartments')
-  else if (path.includes('esperienze')) document.body.classList.add('page-experiences')
+    // Simple fallback for development / loose matching
+    if (!view) {
+      if (normalizedPath.startsWith('/appartamenti')) view = Apartments
+      else if (normalizedPath.startsWith('/esperienze')) view = Experiences
+      else if (normalizedPath.startsWith('/contatti')) view = Contacts
+      else if (normalizedPath.startsWith('/richiesta')) view = routes['/richiesta-soggiorno']
+      else view = Home
+    }
 
-  app.innerHTML = `
+    // Set route-specific class on body for styling
+    document.body.className = ''
+    if (path === '/') document.body.classList.add('page-home')
+    else if (path.includes('appartamenti')) document.body.classList.add('page-apartments')
+    else if (path.includes('esperienze')) document.body.classList.add('page-experiences')
+
+    app.innerHTML = `
       ${Header()}
       <main>
         ${view ? view() : Home()}
@@ -58,76 +59,77 @@ function App() {
       ${Footer()}
     `
 
-  // Re-attach mobile menu listeners after render
-  initMobileMenu()
-  initGalleryInteractions()
-  handleScroll()
+    // Re-attach mobile menu listeners after render
+    initMobileMenu()
+    initGalleryInteractions()
+    handleScroll()
 
-  // Update SEO meta tags and Schema.org
-  updatePageSEO(path)
-}
-
-function handleScroll() {
-  const header = document.querySelector('.site-header')
-  if (!header) return
-
-  const scrollHandler = () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled')
-    } else {
-      header.classList.remove('scrolled')
-    }
+    // Update SEO meta tags and Schema.org
+    updatePageSEO(path)
   }
 
-  window.addEventListener('scroll', scrollHandler)
-  // Run once on init
-  scrollHandler()
-}
+  function handleScroll() {
+    const header = document.querySelector('.site-header')
+    if (!header) return
 
-function navigateTo(url) {
-  history.pushState(null, null, url)
-  router()
-  window.scrollTo(0, 0)
-}
-
-// Handle browser back/forward
-window.addEventListener('popstate', router)
-
-// Handle programmatic navigation
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.addEventListener('click', e => {
-    if (e.target.matches('[data-link]')) {
-      e.preventDefault()
-      navigateTo(e.target.href)
-    }
-    // Handle clickable cards with data-href attribute
-    const card = e.target.closest('[data-href]')
-    if (card) {
-      e.preventDefault()
-      navigateTo(card.dataset.href)
-    }
-    // Also handle links inside Header nav if they match internal routes
-    if (e.target.closest('nav a') || e.target.closest('.logo')) {
-      const anchor = e.target.closest('a')
-      const href = anchor.getAttribute('href')
-      if (href && href.startsWith('/')) {
-        e.preventDefault()
-        navigateTo(href)
+    const scrollHandler = () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled')
+      } else {
+        header.classList.remove('scrolled')
       }
     }
+
+    window.addEventListener('scroll', scrollHandler)
+    // Run once on init
+    scrollHandler()
+  }
+
+  function navigateTo(url) {
+    history.pushState(null, null, url)
+    router()
+    window.scrollTo(0, 0)
+  }
+
+  // Handle browser back/forward
+  window.addEventListener('popstate', router)
+
+  // Handle programmatic navigation
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', e => {
+      if (e.target.matches('[data-link]')) {
+        e.preventDefault()
+        navigateTo(e.target.href)
+      }
+      // Handle clickable cards with data-href attribute
+      const card = e.target.closest('[data-href]')
+      if (card) {
+        e.preventDefault()
+        navigateTo(card.dataset.href)
+      }
+      // Also handle links inside Header nav if they match internal routes
+      if (e.target.closest('nav a') || e.target.closest('.logo')) {
+        const anchor = e.target.closest('a')
+        const href = anchor.getAttribute('href')
+        if (href && href.startsWith('/')) {
+          e.preventDefault()
+          navigateTo(href)
+        }
+      }
+    })
+
+    router()
   })
 
-  router()
-})
 
 
-
-function initMobileMenu() {
-  const menuToggle = document.querySelector('.mobile-menu-toggle')
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      document.body.classList.toggle('menu-active')
-    })
+  function initMobileMenu() {
+    const menuToggle = document.querySelector('.mobile-menu-toggle')
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        document.body.classList.toggle('menu-active')
+      })
+    }
   }
 }
 

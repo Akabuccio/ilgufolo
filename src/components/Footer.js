@@ -13,9 +13,9 @@ export function Footer() {
         <div class="footer-nav">
           <h4 class="footer-heading">Esplora</h4>
           <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/appartamenti/">Appartamenti</a></li>
-            <li><a href="/esperienze-ferrara/">Esperienze</a></li>
+            <li><a href="/" data-link>Home</a></li>
+            <li><a href="/appartamenti/" data-link>Appartamenti</a></li>
+            <li><a href="/esperienze-ferrara/" data-link>Esperienze</a></li>
           </ul>
         </div>
         
