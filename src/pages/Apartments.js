@@ -6,21 +6,21 @@ export function Apartments() {
     <section id="gufolo-family" class="split-screen split-family">
       <div class="split-image">
         <div class="split-gallery apartment-detail">
-          <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.jpg" 
+          <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.webp" 
                alt="Soggiorno accogliente appartamento Gufolo Family vicino al Castello Estense Ferrara"
                data-alt-en="Cozy living room Gufolo Family apartment near Castello Estense Ferrara" 
                class="main-gallery-image">
           
           <!-- Thumbnail Strip -->
           <div class="mini-gallery scrollable-gallery">
-            <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.jpg" alt="Soggiorno accogliente appartamento Gufolo Family nel centro storico di Ferrara" class="gallery-thumb active">
-            <img src="/images/gufolo-family/gufolo-ferrara-angolo-cucina-attrezzata.jpg" alt="Cucina attrezzata Gufolo Family vicino al Castello Estense Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-family/gufolo-ferrara-area-relax.jpg" alt="Area relax appartamento famiglia nel centro di Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-family/gufolo-ferrara-camera-familiare.jpg" alt="Camera familiare con travi a vista Gufolo Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-family/gufolo-ferrara-bagno-privato.jpg" alt="Bagno privato moderno appartamento Ferrara centro" class="gallery-thumb">
-            <img src="/images/gufolo-family/gufolo-ferrara-letto-matrimoniale-comodo.jpg" alt="Letto matrimoniale confortevole soggiorno Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-family/gufolo-ferrara-soffitto-travi-vista.jpg" alt="Soffitto con travi a vista appartamento storico Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-family/gufolo-ferrara-cucinotto-moderno.jpg" alt="Cucinotto moderno completo per vacanze a Ferrara" class="gallery-thumb">
+            <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.webp" alt="Soggiorno accogliente appartamento Gufolo Family nel centro storico di Ferrara" class="gallery-thumb active" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-angolo-cucina-attrezzata.webp" alt="Cucina attrezzata Gufolo Family vicino al Castello Estense Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-area-relax.webp" alt="Area relax appartamento famiglia nel centro di Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-camera-familiare.webp" alt="Camera familiare con travi a vista Gufolo Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-bagno-privato.webp" alt="Bagno privato moderno appartamento Ferrara centro" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-letto-matrimoniale-comodo.webp" alt="Letto matrimoniale confortevole soggiorno Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-soffitto-travi-vista.webp" alt="Soffitto con travi a vista appartamento storico Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-family/gufolo-ferrara-cucinotto-moderno.webp" alt="Cucinotto moderno completo per vacanze a Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
           </div>
         </div>
         
@@ -136,21 +136,21 @@ export function Apartments() {
     <section id="gufolo-suite" class="split-screen split-suite split-reverse">
       <div class="split-image">
         <div class="split-gallery apartment-detail">
-          <img src="/images/gufolo-suite/open-space-gufolo-ferrara.jpg" 
+          <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" 
                alt="Open space moderno Gufolo Suite nel centro storico di Ferrara"
                data-alt-en="Modern open space Gufolo Suite in Ferrara historic center" 
                class="main-gallery-image">
           
           <!-- Thumbnail Strip -->
           <div class="mini-gallery scrollable-gallery">
-            <img src="/images/gufolo-suite/open-space-gufolo-ferrara.jpg" alt="Open space moderno Gufolo Suite nel centro storico di Ferrara" class="gallery-thumb active">
-            <img src="/images/gufolo-suite/soggiorno-luminoso-gufolo-ferrara.jpg" alt="Soggiorno luminoso suite romantica Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-suite/divano-rosso-quadro-gufolo-ferrara.jpg" alt="Divano design soggiorno appartamento Ferrara centro" class="gallery-thumb">
-            <img src="/images/gufolo-suite/cucina-attrezzata-gufolo-ferrara.jpg" alt="Angolo cottura attrezzato per soggiorno a Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-suite/bagno-moderno-completo-gufolo-ferrara.jpg" alt="Bagno moderno completo vicino Castello Estense" class="gallery-thumb">
-            <img src="/images/gufolo-suite/ingresso-travi-vista-gufolo-ferrara.jpg" alt="Ingresso con travi a vista appartamento storico Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-suite/zona-relax-soggiorno-gufolo-ferrara.jpg" alt="Zona relax suite romantica centro Ferrara" class="gallery-thumb">
-            <img src="/images/gufolo-suite/tavolo-pranzo-gufolo-ferrara.jpg" alt="Tavolo pranzo appartamento vacanze Ferrara" class="gallery-thumb">
+            <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" alt="Open space moderno Gufolo Suite nel centro storico di Ferrara" class="gallery-thumb active" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/soggiorno-luminoso-gufolo-ferrara.webp" alt="Soggiorno luminoso suite romantica Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/divano-rosso-quadro-gufolo-ferrara.webp" alt="Divano design soggiorno appartamento Ferrara centro" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/cucina-attrezzata-gufolo-ferrara.webp" alt="Angolo cottura attrezzato per soggiorno a Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/bagno-moderno-completo-gufolo-ferrara.webp" alt="Bagno moderno completo vicino Castello Estense" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/ingresso-travi-vista-gufolo-ferrara.webp" alt="Ingresso con travi a vista appartamento storico Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/zona-relax-soggiorno-gufolo-ferrara.webp" alt="Zona relax suite romantica centro Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/tavolo-pranzo-gufolo-ferrara.webp" alt="Tavolo pranzo appartamento vacanze Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
           </div>
         </div>
         

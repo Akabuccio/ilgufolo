@@ -7,9 +7,12 @@ export function Home() {
     <!-- ============================================ -->
     <section class="hero-liquid">
       <div class="hero-parallax-bg">
-        <img src="/images/gufolo-suite/soggiorno-cucina-gufolo-ferrara.jpg" 
+        <img src="/images/gufolo-suite/soggiorno-cucina-gufolo-ferrara.webp" 
              alt="Soggiorno luminoso con travi a vista - Il Gufolo Ferrara" 
-             loading="eager">
+             width="1200" 
+             height="914"
+             fetchpriority="high"
+             decoding="async">
       </div>
       
       <!-- Liquid Glass Overlay -->
@@ -62,9 +65,12 @@ export function Home() {
             </div>
             
             <div class="card-image-wrapper">
-              <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.jpg" 
+              <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.webp" 
                    alt="Gufolo Family - Soggiorno Accogliente" 
-                   loading="lazy">
+                   width="1200"
+                   height="850"
+                   loading="lazy"
+                   decoding="async">
               <div class="card-image-overlay"></div>
             </div>
             
@@ -103,9 +109,12 @@ export function Home() {
             </div>
             
             <div class="card-image-wrapper">
-              <img src="/images/gufolo-suite/open-space-gufolo-ferrara.jpg" 
+              <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" 
                    alt="Gufolo Suite - Open Space Romantico" 
-                   loading="lazy">
+                   width="1200"
+                   height="956"
+                   loading="lazy"
+                   decoding="async">
               <div class="card-image-overlay"></div>
             </div>
             

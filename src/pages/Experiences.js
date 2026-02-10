@@ -15,7 +15,7 @@ export function Experiences() {
         <!-- Feature 1: Via Saraceno -->
         <article class="experience-card">
           <div class="experience-card-media">
-             <img src="/images/experiences/via-saraceno.jpg" 
+             <img src="/images/experiences/via-saraceno.webp" 
                   alt="Via Saraceno, strada storica nel centro di Ferrara"
                   onerror="this.src='https://placehold.co/800x500/C5A065/FFF?text=Via+Saraceno'">
              <div class="experience-card-quote">
@@ -46,7 +46,7 @@ export function Experiences() {
         <!-- Feature 2: Castello Estense -->
         <article class="experience-card inverted">
           <div class="experience-card-media">
-             <img src="/images/experiences/castello-estense.jpg" 
+             <img src="/images/experiences/castello-estense.webp" 
                   alt="Castello Estense, simbolo di Ferrara con le torri e il fossato"
                   onerror="this.src='https://placehold.co/800x500/2F4F4F/FFF?text=Castello+Estense'">
           </div>
