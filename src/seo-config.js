@@ -20,9 +20,9 @@ export const seoConfig = {
     },
     '/appartamenti/': {
         title: 'Appartamenti di Charme a Ferrara | Il Gufolo',
-        description: 'Due appartamenti esclusivi nel cuore di Ferrara: Gufolo Family per famiglie e Gufolo Suite per coppie. Prenota il tuo soggiorno indimenticabile.',
+        description: 'Due appartamenti esclusivi nel cuore di Ferrara: Gufolo Family per famiglie e Suite per coppie. Prenota il tuo soggiorno indimenticabile.',
         titleEN: 'Charming Apartments in Ferrara, Italy | Il Gufolo',
-        descriptionEN: 'Two exclusive apartments in the heart of Ferrara: Gufolo Family for families and Gufolo Suite for couples. Book your unforgettable Italian stay.',
+        descriptionEN: 'Two exclusive apartments in the heart of Ferrara: Gufolo Family for families and Suite for couples. Book your unforgettable Italian stay.',
         schema: 'apartments'
     },
     '/esperienze-ferrara/': {
@@ -119,7 +119,7 @@ export const apartmentSchemas = [
         "@context": "https://schema.org",
         "@type": "Apartment",
         "name": "Gufolo Suite",
-        "description": "Romantic suite in Ferrara's historic center, ideal for couples and smart workers",
+        "description": "Suite in Ferrara's historic center, ideal for couples and smart workers",
         "inLanguage": ["it", "en"],
         "numberOfRooms": 1,
         "occupancy": {

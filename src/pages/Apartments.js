@@ -6,10 +6,12 @@ export function Apartments() {
     <section id="gufolo-family" class="split-screen split-family">
       <div class="split-image">
         <div class="split-gallery apartment-detail">
-          <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.webp" 
-               alt="Soggiorno accogliente appartamento Gufolo Family vicino al Castello Estense Ferrara"
-               data-alt-en="Cozy living room Gufolo Family apartment near Castello Estense Ferrara" 
-               class="main-gallery-image">
+          <div class="main-image-container">
+            <img src="/images/gufolo-family/gufolo-ferrara-soggiorno-accogliente.webp" 
+                 alt="Soggiorno accogliente appartamento Gufolo Family vicino al Castello Estense Ferrara"
+                 data-alt-en="Cozy living room Gufolo Family apartment near Castello Estense Ferrara" 
+                 class="main-gallery-image">
+          </div>
           
           <!-- Thumbnail Strip -->
           <div class="mini-gallery scrollable-gallery">
@@ -26,11 +28,11 @@ export function Apartments() {
         
         <!-- Capacity Badge -->
         <div class="split-badge badge-family">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
           </svg>
           <span>Perfect for Families</span>
         </div>
@@ -136,36 +138,38 @@ export function Apartments() {
     <section id="gufolo-suite" class="split-screen split-suite split-reverse">
       <div class="split-image">
         <div class="split-gallery apartment-detail">
-          <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" 
-               alt="Open space moderno Gufolo Suite nel centro storico di Ferrara"
-               data-alt-en="Modern open space Gufolo Suite in Ferrara historic center" 
-               class="main-gallery-image">
+          <div class="main-image-container">
+            <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" 
+                 alt="Open space moderno Gufolo Suite nel centro storico di Ferrara"
+                 data-alt-en="Modern open space Gufolo Suite in Ferrara historic center" 
+                 class="main-gallery-image">
+          </div>
           
           <!-- Thumbnail Strip -->
           <div class="mini-gallery scrollable-gallery">
             <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" alt="Open space moderno Gufolo Suite nel centro storico di Ferrara" class="gallery-thumb active" loading="lazy" decoding="async">
-            <img src="/images/gufolo-suite/soggiorno-luminoso-gufolo-ferrara.webp" alt="Soggiorno luminoso suite romantica Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/soggiorno-luminoso-gufolo-ferrara.webp" alt="Soggiorno luminoso Suite Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
             <img src="/images/gufolo-suite/divano-rosso-quadro-gufolo-ferrara.webp" alt="Divano design soggiorno appartamento Ferrara centro" class="gallery-thumb" loading="lazy" decoding="async">
             <img src="/images/gufolo-suite/cucina-attrezzata-gufolo-ferrara.webp" alt="Angolo cottura attrezzato per soggiorno a Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
             <img src="/images/gufolo-suite/bagno-moderno-completo-gufolo-ferrara.webp" alt="Bagno moderno completo vicino Castello Estense" class="gallery-thumb" loading="lazy" decoding="async">
             <img src="/images/gufolo-suite/ingresso-travi-vista-gufolo-ferrara.webp" alt="Ingresso con travi a vista appartamento storico Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
-            <img src="/images/gufolo-suite/zona-relax-soggiorno-gufolo-ferrara.webp" alt="Zona relax suite romantica centro Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
+            <img src="/images/gufolo-suite/zona-relax-soggiorno-gufolo-ferrara.webp" alt="Zona relax Suite centro Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
             <img src="/images/gufolo-suite/tavolo-pranzo-gufolo-ferrara.webp" alt="Tavolo pranzo appartamento vacanze Ferrara" class="gallery-thumb" loading="lazy" decoding="async">
           </div>
         </div>
         
         <!-- Capacity Badge -->
-        <div class="split-badge badge-romantic">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div class="split-badge badge-suite">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
-          <span>Romantic Suite</span>
+          <span>Suite</span>
         </div>
       </div>
       
       <div class="split-content">
         <div class="split-content-inner">
-          <span class="apt-label apt-label-suite">Suite Romantica</span>
+          <span class="apt-label apt-label-suite">Suite</span>
           <h2>Gufolo Suite – Soggiornare a Ferrara in Coppia</h2>
           <p class="apt-tagline">Per coppie, single e smart workers.</p>
           

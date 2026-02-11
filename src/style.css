@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 :root {
     /* Colors - Italian Heritage Luxury (Purple/Blue Palette) */
-    --color-primary: #66023C;
-    /* Tyrian Purple */
-    --color-secondary: #000080;
-    /* Deep Blue */
-    --color-tertiary: #8C3A3A;
-    /* Heritage Brick */
+    --color-primary: #18181B;
+    /* Graphite */
+    --color-secondary: #3F3F46;
+    /* Zinc */
+    --color-cta: #2563EB;
+    /* Premium Blue */
     --color-accent: #C5A065;
     /* Antique Gold */
 
@@ -19,17 +21,23 @@
     --color-background: #FAFAFA;
     --color-surface: #FFFFFF;
     --color-surface-glass: rgba(255, 255, 255, 0.85);
+    --color-surface-soft: #FDFCFE;
+    /* Marble */
+    --color-surface-muted: #F8F7FA;
+    /* Pearl */
 
-    /* Typography - Playfair Display / Inter */
-    --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* Typography - Archivo / Space Grotesk */
+    --font-display: 'Archivo', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
 
-    /* Spacing */
+    /* Spacing - Standardized */
     --space-xs: 0.5rem;
-    --space-sm: 1.5rem;
-    --space-md: 3rem;
-    --space-lg: 6rem;
-    --space-xl: 10rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
 
     /* Setup */
     --container-width: 1400px;
@@ -87,7 +95,9 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    letter-spacing: -0.01em;
+    margin-bottom: var(--space-md);
 }
 
 h3 {
@@ -173,14 +183,16 @@ img {
 }
 
 .btn-primary-glow {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: var(--color-cta);
     color: white;
-    box-shadow: var(--shadow-glow);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary-glow:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 0 60px rgba(102, 2, 60, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.4);
+    background: #1d4ed8;
 }
 
 .btn-glass {
@@ -286,9 +298,10 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
-    padding: 2.5rem 0;
-    /* More breathing room at the top */
+    z-index: 1000;
+    /* Higher z-index to ensure visibility */
+    padding: 1.25rem 0;
+    /* Compact padding */
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -301,8 +314,8 @@ img {
     transition: inherit;
     z-index: -1;
     pointer-events: none;
-    mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
 }
 
 .page-apartments .site-header::before,
@@ -334,7 +347,8 @@ img {
 }
 
 .logo img {
-    height: 80px;
+    height: 50px;
+    /* More compact logo */
     width: auto;
 }
 
@@ -563,11 +577,37 @@ img {
     color: var(--color-secondary);
 }
 
-.badge-romantic {
+/* Apartment Labels */
+.apt-label {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
+
+.apt-tagline {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-lg);
+    font-weight: 500;
+}
+
+.apt-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xl);
+}
+
+.badge-suite {
     color: var(--color-primary);
 }
 
-.badge-romantic svg {
+.badge-suite svg {
     fill: var(--color-primary);
     fill-opacity: 0.2;
 }
@@ -1444,9 +1484,11 @@ img {
 
 .split-screen {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
+    grid-template-columns: 1.2fr 0.8fr;
+    /* Responsive Split */
+    min-height: auto;
     position: relative;
+    background: var(--color-background);
 }
 
 .split-screen.split-reverse {
@@ -1468,11 +1510,18 @@ img {
     flex-direction: column;
 }
 
-.split-gallery .main-gallery-image {
-    flex: 1;
+.split-gallery .main-image-container {
     width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #000;
+}
+
+.split-gallery .main-gallery-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    min-height: 500px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .split-gallery .mini-gallery {
@@ -1504,29 +1553,38 @@ img {
 /* Split Badge */
 .split-badge {
     position: absolute;
-    top: 8rem;
-    /* Moved down to avoid header overlap */
+    top: 10rem;
+    /* Pushed further down to escape the header's blurred mask completely */
     left: 2rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.25rem;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--color-surface-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: var(--border-radius-full);
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
     box-shadow: var(--shadow-md);
     z-index: 10;
+    transition: var(--transition-smooth);
+}
+
+.split-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: var(--color-surface);
 }
 
 .split-badge.badge-family {
     color: var(--color-secondary);
 }
 
-.split-badge.badge-romantic {
+.split-badge.badge-suite {
     color: var(--color-primary);
 }
 
@@ -1539,21 +1597,27 @@ img {
 .split-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 4rem;
+    justify-content: flex-start;
+    padding: var(--space-xl) var(--space-3xl);
     background: var(--color-surface);
 }
 
+.split-family {
+    margin-top: 130px;
+    /* Increased to completely clear the compact header's blur mask */
+}
+
 .split-family .split-content {
-    background: linear-gradient(180deg, #f8f6f9 0%, #ffffff 100%);
+    background: linear-gradient(180deg, var(--color-surface-muted) 0%, var(--color-surface) 100%);
 }
 
 .split-suite .split-content {
-    background: linear-gradient(180deg, #f5f3f8 0%, #ffffff 100%);
+    background: linear-gradient(180deg, var(--color-surface-soft) 0%, var(--color-surface) 100%);
 }
 
 .split-content-inner {
-    max-width: 500px;
+    max-width: 580px;
+    width: 100%;
 }
 
 /* Apartment Labels */
@@ -1624,9 +1688,10 @@ img {
 
 .amenity-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-xl) 0;
+    width: 100%;
 }
 
 .amenity-item {
@@ -1634,15 +1699,27 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
+    gap: var(--space-xs);
+    padding: var(--space-sm);
+    background: var(--color-surface-soft);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-fast);
+    border: 1px solid transparent;
+}
+
+.amenity-item:hover {
+    background: var(--color-surface);
+    border-color: var(--color-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-sm);
 }
 
 .amenity-icon {
-    width: 56px;
-    height: 56px;
+    color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0.25rem;
     background: linear-gradient(135deg, rgba(102, 2, 60, 0.05) 0%, rgba(0, 0, 128, 0.05) 100%);
     border-radius: var(--border-radius-lg);
     transition: var(--transition-smooth);
@@ -1826,35 +1903,40 @@ img {
         justify-content: center;
     }
 
+    .split-gallery .main-image-container {
+        aspect-ratio: 16 / 9;
+    }
+
     .split-gallery .main-gallery-image {
-        min-height: 300px;
-    }
-
-    .split-content {
-        padding: 2rem 1.5rem;
-    }
-
-    .amenity-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.75rem;
-    }
-
-    .amenity-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .amenity-item span {
-        font-size: 0.7rem;
-    }
-
-    .split-badge {
-        top: 1rem;
-        left: 1rem;
-        font-size: 0.7rem;
-        padding: 0.5rem 1rem;
+        min-height: auto;
     }
 }
+
+.split-content {
+    padding: 2rem 1.5rem;
+}
+
+.amenity-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.amenity-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.amenity-item span {
+    font-size: 0.7rem;
+}
+
+.split-badge {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+}
+
 
 @media (max-width: 480px) {
     .apt-hero-content {

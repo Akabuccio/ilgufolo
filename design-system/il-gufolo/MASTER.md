@@ -7,8 +7,8 @@
 ---
 
 **Project:** Il Gufolo
-**Generated:** 2026-02-09 10:38:33
-**Category:** Hotel/Hospitality
+**Generated:** 2026-02-11 09:13:00
+**Category:** E-commerce Luxury
 
 ---
 
@@ -18,24 +18,24 @@
 
 | Role | Hex | CSS Variable |
 |------|-----|--------------|
-| Primary | `#1E3A8A` | `--color-primary` |
-| Secondary | `#3B82F6` | `--color-secondary` |
-| CTA/Accent | `#CA8A04` | `--color-cta` |
-| Background | `#F8FAFC` | `--color-background` |
-| Text | `#1E40AF` | `--color-text` |
+| Primary | `#18181B` | `--color-primary` |
+| Secondary | `#3F3F46` | `--color-secondary` |
+| CTA/Accent | `#2563EB` | `--color-cta` |
+| Background | `#FAFAFA` | `--color-background` |
+| Text | `#09090B` | `--color-text` |
 
-**Color Notes:** Warm neutrals + Gold (#D4AF37) + Brand accent
+**Color Notes:** Brand primary + artistic interpretation
 
 ### Typography
 
-- **Heading Font:** Playfair Display
-- **Body Font:** Inter
-- **Mood:** elegant, luxury, sophisticated, timeless, premium, editorial
-- **Google Fonts:** [Playfair Display + Inter](https://fonts.google.com/share?selection.family=Inter:wght@300;400;500;600;700|Playfair+Display:wght@400;500;600;700)
+- **Heading Font:** Archivo
+- **Body Font:** Space Grotesk
+- **Mood:** minimal, portfolio, designer, creative, clean, artistic
+- **Google Fonts:** [Archivo + Space Grotesk](https://fonts.google.com/share?selection.family=Archivo:wght@300;400;500;600;700|Space+Grotesk:wght@300;400;500;600;700)
 
 **CSS Import:**
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 ```
 
 ### Spacing Variables
@@ -68,7 +68,7 @@
 ```css
 /* Primary Button */
 .btn-primary {
-  background: #CA8A04;
+  background: #2563EB;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -85,8 +85,8 @@
 /* Secondary Button */
 .btn-secondary {
   background: transparent;
-  color: #1E3A8A;
-  border: 2px solid #1E3A8A;
+  color: #18181B;
+  border: 2px solid #18181B;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
@@ -99,7 +99,7 @@
 
 ```css
 .card {
-  background: #F8FAFC;
+  background: #FAFAFA;
   border-radius: 12px;
   padding: 24px;
   box-shadow: var(--shadow-md);
@@ -125,9 +125,9 @@
 }
 
 .input:focus {
-  border-color: #1E3A8A;
+  border-color: #18181B;
   outline: none;
-  box-shadow: 0 0 0 3px #1E3A8A20;
+  box-shadow: 0 0 0 3px #18181B20;
 }
 ```
 
@@ -163,17 +163,18 @@
 
 ### Page Pattern
 
-**Pattern Name:** Hero-Centric + Social Proof
+**Pattern Name:** Portfolio Grid
 
-- **CTA Placement:** Above fold
-- **Section Order:** Hero > Features > CTA
+- **Conversion Strategy:**  hover overlay info
+- **CTA Placement:** Project Card Hover + Footer Contact
+- **Section Order:** 1. Hero (Name/Role), 2. Project Grid (Masonry), 3. About/Philosophy, 4. Contact
 
 ---
 
 ## Anti-Patterns (Do NOT Use)
 
-- ❌ Poor photos
-- ❌ Complex booking
+- ❌ Vibrant & Block-based
+- ❌ Playful colors
 
 ### Additional Forbidden Patterns
 

@@ -101,16 +101,16 @@ export function Home() {
           <!-- GUFOLO SUITE CARD -->
           <article class="apartment-card-fluid" data-href="/appartamenti/">
             <!-- Capacity Badge -->
-            <div class="capacity-badge badge-romantic">
+            <div class="capacity-badge badge-suite">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
               </svg>
-              <span>Romantic Suite</span>
+              <span>Suite</span>
             </div>
             
             <div class="card-image-wrapper">
               <img src="/images/gufolo-suite/open-space-gufolo-ferrara.webp" 
-                   alt="Gufolo Suite - Open Space Romantico" 
+                   alt="Gufolo Suite - Open Space Suite" 
                    width="1200"
                    height="956"
                    loading="lazy"
@@ -120,7 +120,7 @@ export function Home() {
             
             <div class="card-content-fluid">
               <div class="card-meta">
-                <span class="apt-type">Suite Romantica</span>
+                <span class="apt-type">Suite</span>
                 <span class="apt-capacity">3 Ospiti</span>
               </div>
               <h3>Gufolo Suite</h3>
