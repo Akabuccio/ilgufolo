@@ -16,8 +16,6 @@ export function Footer() {
             <li><a href="/" data-link>Home</a></li>
             <li><a href="/appartamenti/" data-link>Appartamenti</a></li>
             <li><a href="/esperienze-ferrara/" data-link>Esperienze</a></li>
-            <li style="margin-top: 1rem; opacity: 0.7; font-size: 0.9em;"><a href="/privacy-policy" data-link>Privacy Policy</a></li>
-            <li style="opacity: 0.7; font-size: 0.9em;"><a href="/cookie-policy" data-link>Cookie Policy</a></li>
           </ul>
         </div>
         
