@@ -15,9 +15,9 @@ export function Experiences() {
         <!-- Feature 1: Via Saraceno -->
         <article class="experience-card">
           <div class="experience-card-media">
-             <img src="/images/experiences/via-saraceno.webp" 
-                  alt="Via Saraceno, strada storica nel centro di Ferrara"
-                  onerror="this.src='https://placehold.co/800x500/C5A065/FFF?text=Via+Saraceno'">
+             <img src="/images/experiences/saraceno-seppia.jpg" 
+                  alt="Vista storica di Via Saraceno a Ferrara in toni seppia"
+                  onerror="this.src='/images/experiences/via-saraceno.webp'">
              <div class="experience-card-quote">
                <p>"La via più caratteristica del centro."</p>
              </div>
