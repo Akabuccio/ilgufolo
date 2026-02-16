@@ -141,4 +141,9 @@ function App() {
   }
 }
 
-App()
+// Robust initialization
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', App)
+} else {
+  App()
+}
