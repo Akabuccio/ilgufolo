@@ -124,7 +124,7 @@ export function Apartments() {
           
           <!-- CTA -->
           <div class="apt-cta-group">
-            <a href="/richiesta-soggiorno/?apt=gufolo-family" class="btn btn-primary-glow" data-link>
+            <a href="/contatti/" class="btn btn-primary-glow" data-link>
               Richiedi Disponibilità
             </a>
           </div>
@@ -248,7 +248,7 @@ export function Apartments() {
           
           <!-- CTA -->
           <div class="apt-cta-group">
-            <a href="/richiesta-soggiorno/?apt=gufolo-suite" class="btn btn-primary-glow" data-link>
+            <a href="/contatti/" class="btn btn-primary-glow" data-link>
               Richiedi Disponibilità
             </a>
           </div>
